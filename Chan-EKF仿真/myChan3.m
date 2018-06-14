@@ -1,4 +1,4 @@
-function X = myChan3(BSN, BS, R)
+function X = myChan3(BSN, BS, R, R0)
 %   在myChan2.m的基础上，将其改为3维
 %   实现无线定位中的CHAN算法
 %   参考：ChanAlgorithm.m NetworkTop.m 李金伦，西南交通大学，10 December, 2004, 第一版
@@ -93,10 +93,9 @@ function X = myChan3(BSN, BS, R)
     out = abs(Za);
     
     % 当要把高度取负根的时候用
-    %out(3) = -out(3); 
+    out(3) = -out(3); 
 	
-	%out(3) = (BS(1,4)^2+BS(2,4)^2+BS(3,4)^2-R0(4)^2+R0(1)^2-2*BS(1,4)*out(1)-2*BS(2,4)*out(2))/(2*BS(3,4));
-    %out(3)= sqrt(R0(4)^2 - (out(1)-BS(1,4))^2+(out(2)-BS(2,4))^2) + BS(3,4);
+	out(3) = (BS(1,4)^2+BS(2,4)^2+BS(3,4)^2-R0(4)^2+R0(1)^2-2*BS(1,4)*out(1)-2*BS(2,4)*out(2))/(2*BS(3,4));
 	
 
     if nargout == 1
