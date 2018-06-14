@@ -1,8 +1,8 @@
 /*
  * MATLAB Compiler: 6.5 (R2017b)
- * Date: Thu Jun 14 15:06:57 2018
+ * Date: Thu Jun 14 15:58:02 2018
  * Arguments: 
- * "-B""macro_default""-W""java:getLocation,GetLocation""-T""link:lib""-d""I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\getLocation\\for_testing""class{GetLocation:I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\getX.m}"
+ * "-B""macro_default""-W""java:getLocation,GetLocation""-T""link:lib""-d""I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\getLocation\\for_testing""class{GetLocation:I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\3s使用版\\getX.m}"
  */
 
 package getLocation;
@@ -15,7 +15,7 @@ import java.util.*;
  * The <code>GetLocation</code> class provides a Java interface to MATLAB functions. 
  * The interface is compiled from the following files:
  * <pre>
- *  I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\getX.m
+ *  I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\3s使用版\\getX.m
  * </pre>
  * The {@link #dispose} method <b>must</b> be called on a <code>GetLocation</code> 
  * instance when it is no longer needed to ensure that native resources allocated by this 
@@ -137,12 +137,6 @@ public class GetLocation extends MWComponentInstance<GetLocation>
      * Provides the interface for calling the <code>getX</code> MATLAB function 
      * where the first argument, an instance of List, receives the output of the MATLAB function and
      * the second argument, also an instance of List, provides the input to the MATLAB function.
-     * <p>
-     * Description as provided by the author of the MATLAB function:
-     * </p>
-     * <pre>
-     * %d = d ./10;
-     * </pre>
      * @param lhs List in which to return outputs. Number of outputs (nargout) is
      * determined by allocated size of this List. Outputs are returned as
      * sub-classes of <code>com.mathworks.toolbox.javabuilder.MWArray</code>.
@@ -165,12 +159,6 @@ public class GetLocation extends MWComponentInstance<GetLocation>
      * Provides the interface for calling the <code>getX</code> MATLAB function 
      * where the first argument, an Object array, receives the output of the MATLAB function and
      * the second argument, also an Object array, provides the input to the MATLAB function.
-     * <p>
-     * Description as provided by the author of the MATLAB function:
-     * </p>
-     * <pre>
-     * %d = d ./10;
-     * </pre>
      * @param lhs array in which to return outputs. Number of outputs (nargout)
      * is determined by allocated size of this array. Outputs are returned as
      * sub-classes of <code>com.mathworks.toolbox.javabuilder.MWArray</code>.
@@ -198,12 +186,6 @@ public class GetLocation extends MWComponentInstance<GetLocation>
      * any supported Java type. Arguments passed as Java types are converted to
      * MATLAB arrays according to default conversion rules.
      *
-     * <p>
-     * Description as provided by the author of the MATLAB function:
-     * </p>
-     * <pre>
-     * %d = d ./10;
-     * </pre>
      * @param nargout Number of outputs to return.
      * @param rhs The inputs to the MATLAB function.
      * @return Array of length nargout containing the function outputs. Outputs

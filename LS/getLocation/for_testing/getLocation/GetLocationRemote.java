@@ -1,8 +1,8 @@
 /*
  * MATLAB Compiler: 6.5 (R2017b)
- * Date: Thu Jun 14 15:06:57 2018
+ * Date: Thu Jun 14 15:58:02 2018
  * Arguments: 
- * "-B""macro_default""-W""java:getLocation,GetLocation""-T""link:lib""-d""I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\getLocation\\for_testing""class{GetLocation:I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\getX.m}"
+ * "-B""macro_default""-W""java:getLocation,GetLocation""-T""link:lib""-d""I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\getLocation\\for_testing""class{GetLocation:I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\3s使用版\\getX.m}"
  */
 
 package getLocation;
@@ -16,7 +16,7 @@ import java.rmi.RemoteException;
  * The <code>GetLocationRemote</code> class provides a Java RMI-compliant interface to 
  * MATLAB functions. The interface is compiled from the following files:
  * <pre>
- *  I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\getX.m
+ *  I:\\研二\\室内定位\\钱潮论文\\程序\\LS\\3s使用版\\getX.m
  * </pre>
  * The {@link #dispose} method <b>must</b> be called on a <code>GetLocationRemote</code> 
  * instance when it is no longer needed to ensure that native resources allocated by this 
@@ -43,10 +43,9 @@ public interface GetLocationRemote extends Poolable
      * All inputs to this method must implement either Serializable (pass-by-value) or 
      * Remote (pass-by-reference) as per the RMI specification.
      *
-     * Documentation as provided by the author of the MATLAB function:
-     * <pre>
-     * %d = d ./10;
-     * </pre>
+     * No usage documentation is available for this function.  (To fix this, the function 
+     * author should insert a help comment at the beginning of their MATLAB code.  See 
+     * the MATLAB documentation for more details.)
      *
      * @param nargout Number of outputs to return.
      * @param rhs The inputs to the MATLAB function.

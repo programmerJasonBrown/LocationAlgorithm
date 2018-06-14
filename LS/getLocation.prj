@@ -94,18 +94,18 @@
       <param.net.saved.interface />
     </unset>
     <fileset.exports>
-      <file>${PROJECT_ROOT}\getX.m</file>
+      <file>${PROJECT_ROOT}\3s使用版\getX.m</file>
     </fileset.exports>
     <fileset.classes>
       <entity.package name="">
         <entity.class name="GetLocation">
-          <file>${PROJECT_ROOT}\getX.m</file>
+          <file>${PROJECT_ROOT}\3s使用版\getX.m</file>
         </entity.class>
       </entity.package>
     </fileset.classes>
     <fileset.resources />
     <fileset.depfun>
-      <file>${PROJECT_ROOT}\LSfunction.m</file>
+      <file>${PROJECT_ROOT}\3s使用版\LSfunction.m</file>
     </fileset.depfun>
     <fileset.package />
     <build-deliverables>
