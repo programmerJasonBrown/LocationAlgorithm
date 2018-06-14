@@ -6,7 +6,7 @@ BS = [0,      0,        3.56,           0 ;
 d = d ./10;
 di = zeros(1,4);
 for i = 1:4
-    di(i) = d(i)+d(i+4);
+    di(i) = (d(i)+d(i+4))/2;
 end
 
 BS = BS.*100;

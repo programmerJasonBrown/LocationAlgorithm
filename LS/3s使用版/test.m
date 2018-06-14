@@ -24,8 +24,8 @@ d4 = sqrt((x0 - x3)^2+(y0 - y3)^2+(z0 - z3)^2) ;
 
 
 
-d=[d1,d2,d3,d4]
-%d = d.*10;
+d=[d1,d2,d3,d4,d1,d2,d3,d4]
+d = d.*10;
 [x,y,z] = getX(d); 
  disp(['(',num2str(x),', ',num2str(y),', ',num2str(z),')']);
 end
