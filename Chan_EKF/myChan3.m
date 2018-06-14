@@ -8,7 +8,6 @@ function X = myChan3(BSN, BS, R)
 %       - R 为 (BSN-1) 向量，为论文中的 r_{i,1}，即第 2,3,...BSN 个基站与第一个基站
 %           距 MS 的距离之差，可由TDOA乘以光速直接算得
 %       - X 为算得的 MS 的位置 x 和 y 和 z
- 
     % 噪声功率：
     Q = eye(BSN-1); % (BSN-1,BSN-1)
     % 第一次LS：

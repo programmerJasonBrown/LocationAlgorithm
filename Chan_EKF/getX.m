@@ -1,7 +1,7 @@
 function [a,b,c] = getX(d)
 % 基站数目
-BSN = 4;
-N = 3;         %计算连续N个时刻 
+BSN = 4;   %基站数
+N = 2;         %计算连续N次
 n = 3;            %状态维度
 
 % 各个基站的位置
@@ -9,23 +9,22 @@ BS = [0,         0,         3.56,           0 ;
       0,         0,            0,        7.84 ;
       0,      2.34,            1,        0.74 ]; 
    
-BS = BS(:,1:BSN);
 BS = BS .* 100;
-d = d./10;
+%d = d./10;
 X = zeros(n,N); %存Chan计算的结果
 RR = zeros(4,N);
 for i = 1:N
 	R0 = d(((i-1)*4+1) : (i*4));  %用来存放距离观测值
 	RR(:,i) = R0';
-    R = zeros(1,3);
+    R = zeros(1,3);  %第 2,3,4 个基站与第一个基站距离
 	for j = 1: BSN-1
 		R(j) = R0(j+1) - R0(1); 
 	end
 	X(:,i) = myChan3(BSN, BS, R);
 end
 
-X
 
+X
 
 
 RR = RR.^2; %用来存放距离观测值的平方
@@ -52,7 +51,7 @@ for k=2:N
   P=P-K*H*P;                              %EKF方差，对应line6
   xV(:,k) = x;                            %save
 end
-
+xV
 a = xV(1,2);
 b = xV(2,2);
 c = xV(3,2);
